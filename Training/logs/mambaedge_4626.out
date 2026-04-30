@@ -1,0 +1,47 @@
+============================================================
+  Job ID     : 4626
+  Node       : node004
+  Num GPUs   : 3
+  Start      : Wed Apr 29 23:41:33 IST 2026
+============================================================
+
+0, NVIDIA GeForce GTX 1080 Ti, 11264 MiB
+1, NVIDIA GeForce GTX 1080 Ti, 11264 MiB
+2, NVIDIA GeForce GTX 1080 Ti, 11264 MiB
+
+Launching torchrun with 3 GPU(s) ...
+
+[WARN] GPU 0 (NVIDIA GeForce GTX 1080 Ti) is sm_61 — below sm_70 minimum for mamba_ssm Triton kernels. Forcing pure-PyTorch fallback.
+[WARN] GPU 0 (NVIDIA GeForce GTX 1080 Ti) is sm_61 — below sm_70 minimum for mamba_ssm Triton kernels. Forcing pure-PyTorch fallback.[WARN] mamba_ssm disabled — GPU is sm_61 (need sm_70+). Using pure-PyTorch SSM fallback (same accuracy, slightly slower).
+
+[WARN] mamba_ssm disabled — GPU is sm_61 (need sm_70+). Using pure-PyTorch SSM fallback (same accuracy, slightly slower).
+[WARN] GPU 0 (NVIDIA GeForce GTX 1080 Ti) is sm_61 — below sm_70 minimum for mamba_ssm Triton kernels. Forcing pure-PyTorch fallback.
+[WARN] mamba_ssm disabled — GPU is sm_61 (need sm_70+). Using pure-PyTorch SSM fallback (same accuracy, slightly slower).
+[INFO] Found 50 trace file(s) in /home/cs25m115/spec2017
+[INFO] Found 50 trace file(s) in /home/cs25m115/spec2017[INFO] Found 50 trace file(s) in /home/cs25m115/spec2017
+
+[rank0] Pre-loading / caching traces before DDP init ...
+[CACHE] 602.gcc_s-1850B.champsimtrace.xz: 5,879 accesses | 1 unique pages
+[CACHE] 602.gcc_s-1850B.champsimtrace.xz: 5,879 accesses | 1 unique pages[CACHE] 602.gcc_s-1850B.champsimtrace.xz: 5,879 accesses | 1 unique pages
+
+[CACHE] 602.gcc_s-2226B.champsimtrace.xz: 14,115 accesses | 1 unique pages
+[CACHE] 602.gcc_s-2226B.champsimtrace.xz: 14,115 accesses | 1 unique pages
+[CACHE] 602.gcc_s-2226B.champsimtrace.xz: 14,115 accesses | 1 unique pages
+[CACHE] 602.gcc_s-2375B.champsimtrace.xz: 16,464 accesses | 1 unique pages
+[CACHE] 602.gcc_s-2375B.champsimtrace.xz: 16,464 accesses | 1 unique pages
+[CACHE] 602.gcc_s-2375B.champsimtrace.xz: 16,464 accesses | 1 unique pages
+[CACHE] 602.gcc_s-734B.champsimtrace.xz: 11,069 accesses | 1 unique pages[CACHE] 602.gcc_s-734B.champsimtrace.xz: 11,069 accesses | 1 unique pages
+
+[CACHE] 602.gcc_s-734B.champsimtrace.xz: 11,069 accesses | 1 unique pages
+[CACHE] 603.bwaves_s-1080B.champsimtrace.xz: 147 accesses | 1 unique pages
+[CACHE] 603.bwaves_s-1080B.champsimtrace.xz: 147 accesses | 1 unique pages
+[CACHE] 603.bwaves_s-1080B.champsimtrace.xz: 147 accesses | 1 unique pages
+[CACHE] 603.bwaves_s-1740B.champsimtrace.xz: 41,808 accesses | 2 unique pages
+[CACHE] 603.bwaves_s-1740B.champsimtrace.xz: 41,808 accesses | 2 unique pages
+[CACHE] 603.bwaves_s-1740B.champsimtrace.xz: 41,808 accesses | 2 unique pages
+[CACHE] 603.bwaves_s-2609B.champsimtrace.xz: 8,916 accesses | 2 unique pages[CACHE] 603.bwaves_s-2609B.champsimtrace.xz: 8,916 accesses | 2 unique pages
+
+[CACHE] 603.bwaves_s-2609B.champsimtrace.xz: 8,916 accesses | 2 unique pages
+[CACHE] 603.bwaves_s-2931B.champsimtrace.xz: 6,561 accesses | 1 unique pages
+[CACHE] 603.bwaves_s-2931B.champsimtrace.xz: 6,561 accesses | 1 unique pages
+[CACHE] 603.bwaves_s-2931B.champsimtrace.xz: 6,561 accesses | 1 unique pages

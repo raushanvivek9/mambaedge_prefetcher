@@ -1,0 +1,18 @@
+{
+  "602.gcc_s-1850B.champsimtrace.xz": {
+    "trace": "602.gcc_s-1850B.champsimtrace.xz",
+    "n_accesses": 207,
+    "page_acc": 100.0,
+    "offset_acc": 100.0,
+    "addr_acc": 100.0,
+    "infer_time": 0.04
+  },
+  "638.imagick_s-10316B.champsimtrace.xz": {
+    "trace": "638.imagick_s-10316B.champsimtrace.xz",
+    "n_accesses": 15,
+    "page_acc": NaN,
+    "offset_acc": NaN,
+    "addr_acc": NaN,
+    "infer_time": 0.0
+  }
+}

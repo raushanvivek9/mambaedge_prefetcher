@@ -1,0 +1,340 @@
+============================================================
+  Job ID     : 4542
+  Node       : node006
+  Start      : Sun Apr 26 18:33:20 IST 2026
+  Checkpoint : /home/cs25m115/mamba/checkpoints/mambaedge_best.pth
+  Trace dir  : /home/cs25m115/spec2017
+============================================================
+
+0, NVIDIA GeForce GTX 1080 Ti, 11264 MiB, 6.1
+1, NVIDIA GeForce GTX 1080 Ti, 11264 MiB, 6.1
+2, NVIDIA GeForce GTX 1080 Ti, 11264 MiB, 6.1
+
+Traces found : 50
+Cached       : 49  (.pages.npy files)
+
+------------------------------------------------------------
+ STEP 1: Sanity check — run inference demo on 3 traces
+------------------------------------------------------------
+
+  >>> 602.gcc_s-1850B.champsimtrace.xz
+[INFO] GPU sm_61 < sm_70 — using pure-PyTorch SSM.
+============================================================
+  Script     : mambaedge_inference.py
+  Checkpoint : /home/cs25m115/mamba/checkpoints/mambaedge_best.pth
+  Device     : cuda:0
+  Start      : 2026-04-26 18:33:28
+============================================================
+[MambaEdge] Model ready on cuda  | params: 170,548  | Triton SSM: False
+
+── Demo 1: predict from address list ──
+  Input : last 32 of 40 addresses
+  Top-1: page=  0  offset= 0  addr=0x00000000  prob=0.9030
+  Top-2: page=511  offset= 0  addr=0x001ff000  prob=0.0009
+  Top-3: page=200  offset= 0  addr=0x000c8000  prob=0.0002
+
+── Demo 2: streaming (step by step) ──
+  step  31: → prefetch 0x00000000  (page=0, offset=0)
+  step  32: → prefetch 0x00000000  (page=0, offset=0)
+  step  33: → prefetch 0x00000000  (page=0, offset=0)
+  step  34: → prefetch 0x00000000  (page=0, offset=0)
+  step  35: → prefetch 0x00000000  (page=0, offset=0)
+
+── Demo 3: full trace 602.gcc_s-1850B.champsimtrace.xz ──
+
+[MambaEdge] Predicting trace: 602.gcc_s-1850B.champsimtrace.xz
+  Loading trace ... 207 accesses loaded in 1382.6s
+  Running inference ... done in 0.0s
+
+  ── Results: 602.gcc_s-1850B.champsimtrace.xz ──
+  Page  accuracy (exact) :  100.00%
+  Offset accuracy (exact):  100.00%
+  Address accuracy       :  100.00%  ← page+offset both correct
+  Total time             : 1382.6s  (4,691 predictions/sec)
+
+  Results saved → /home/cs25m115/mamba/checkpoints/mambaedge_sim_results.json
+
+============================================================
+  Finished   : 2026-04-26 18:56:31
+  Exit code  : 0
+============================================================
+
+  >>> 602.gcc_s-2226B.champsimtrace.xz
+[INFO] GPU sm_61 < sm_70 — using pure-PyTorch SSM.
+============================================================
+  Script     : mambaedge_inference.py
+  Checkpoint : /home/cs25m115/mamba/checkpoints/mambaedge_best.pth
+  Device     : cuda:0
+  Start      : 2026-04-26 18:56:39
+============================================================
+[MambaEdge] Model ready on cuda  | params: 170,548  | Triton SSM: False
+
+── Demo 1: predict from address list ──
+  Input : last 32 of 40 addresses
+  Top-1: page=  0  offset= 0  addr=0x00000000  prob=0.9030
+  Top-2: page=511  offset= 0  addr=0x001ff000  prob=0.0009
+  Top-3: page=200  offset= 0  addr=0x000c8000  prob=0.0002
+
+── Demo 2: streaming (step by step) ──
+  step  31: → prefetch 0x00000000  (page=0, offset=0)
+  step  32: → prefetch 0x00000000  (page=0, offset=0)
+  step  33: → prefetch 0x00000000  (page=0, offset=0)
+  step  34: → prefetch 0x00000000  (page=0, offset=0)
+  step  35: → prefetch 0x00000000  (page=0, offset=0)
+
+── Demo 3: full trace 602.gcc_s-2226B.champsimtrace.xz ──
+
+[MambaEdge] Predicting trace: 602.gcc_s-2226B.champsimtrace.xz
+  Loading trace ... 121 accesses loaded in 1055.9s
+  Running inference ... done in 0.0s
+
+  ── Results: 602.gcc_s-2226B.champsimtrace.xz ──
+  Page  accuracy (exact) :  100.00%
+  Offset accuracy (exact):  100.00%
+  Address accuracy       :  100.00%  ← page+offset both correct
+  Total time             : 1056.0s  (2,328 predictions/sec)
+
+  Results saved → /home/cs25m115/mamba/checkpoints/mambaedge_sim_results.json
+
+============================================================
+  Finished   : 2026-04-26 19:14:15
+  Exit code  : 0
+============================================================
+
+  >>> 602.gcc_s-2375B.champsimtrace.xz
+[INFO] GPU sm_61 < sm_70 — using pure-PyTorch SSM.
+============================================================
+  Script     : mambaedge_inference.py
+  Checkpoint : /home/cs25m115/mamba/checkpoints/mambaedge_best.pth
+  Device     : cuda:0
+  Start      : 2026-04-26 19:14:23
+============================================================
+[MambaEdge] Model ready on cuda  | params: 170,548  | Triton SSM: False
+
+── Demo 1: predict from address list ──
+  Input : last 32 of 40 addresses
+  Top-1: page=  0  offset= 0  addr=0x00000000  prob=0.9030
+  Top-2: page=511  offset= 0  addr=0x001ff000  prob=0.0009
+  Top-3: page=200  offset= 0  addr=0x000c8000  prob=0.0002
+
+── Demo 2: streaming (step by step) ──
+  step  31: → prefetch 0x00000000  (page=0, offset=0)
+  step  32: → prefetch 0x00000000  (page=0, offset=0)
+  step  33: → prefetch 0x00000000  (page=0, offset=0)
+  step  34: → prefetch 0x00000000  (page=0, offset=0)
+  step  35: → prefetch 0x00000000  (page=0, offset=0)
+
+── Demo 3: full trace 602.gcc_s-2375B.champsimtrace.xz ──
+
+[MambaEdge] Predicting trace: 602.gcc_s-2375B.champsimtrace.xz
+  Loading trace ... 9,144 accesses loaded in 2033.6s
+  Running inference ... done in 0.4s
+
+  ── Results: 602.gcc_s-2375B.champsimtrace.xz ──
+  Page  accuracy (exact) :  100.00%
+  Offset accuracy (exact):   98.46%
+  Address accuracy       :   98.46%  ← page+offset both correct
+  Total time             : 2034.0s  (24,456 predictions/sec)
+
+  Results saved → /home/cs25m115/mamba/checkpoints/mambaedge_sim_results.json
+
+============================================================
+  Finished   : 2026-04-26 19:48:18
+  Exit code  : 0
+============================================================
+
+  >>> 602.gcc_s-734B.champsimtrace.xz
+[INFO] GPU sm_61 < sm_70 — using pure-PyTorch SSM.
+============================================================
+  Script     : mambaedge_inference.py
+  Checkpoint : /home/cs25m115/mamba/checkpoints/mambaedge_best.pth
+  Device     : cuda:0
+  Start      : 2026-04-26 19:48:25
+============================================================
+[MambaEdge] Model ready on cuda  | params: 170,548  | Triton SSM: False
+
+── Demo 1: predict from address list ──
+  Input : last 32 of 40 addresses
+  Top-1: page=  0  offset= 0  addr=0x00000000  prob=0.9030
+  Top-2: page=511  offset= 0  addr=0x001ff000  prob=0.0009
+  Top-3: page=200  offset= 0  addr=0x000c8000  prob=0.0002
+
+── Demo 2: streaming (step by step) ──
+  step  31: → prefetch 0x00000000  (page=0, offset=0)
+  step  32: → prefetch 0x00000000  (page=0, offset=0)
+  step  33: → prefetch 0x00000000  (page=0, offset=0)
+  step  34: → prefetch 0x00000000  (page=0, offset=0)
+  step  35: → prefetch 0x00000000  (page=0, offset=0)
+
+── Demo 3: full trace 602.gcc_s-734B.champsimtrace.xz ──
+
+[MambaEdge] Predicting trace: 602.gcc_s-734B.champsimtrace.xz
+  Loading trace ... 4,373 accesses loaded in 1471.7s
+  Running inference ... done in 0.2s
+
+  ── Results: 602.gcc_s-734B.champsimtrace.xz ──
+  Page  accuracy (exact) :  100.00%
+  Offset accuracy (exact):  100.00%
+  Address accuracy       :  100.00%  ← page+offset both correct
+  Total time             : 1471.9s  (22,434 predictions/sec)
+
+  Results saved → /home/cs25m115/mamba/checkpoints/mambaedge_sim_results.json
+
+============================================================
+  Finished   : 2026-04-26 20:12:58
+  Exit code  : 0
+============================================================
+
+  >>> 603.bwaves_s-1080B.champsimtrace.xz
+[INFO] GPU sm_61 < sm_70 — using pure-PyTorch SSM.
+============================================================
+  Script     : mambaedge_inference.py
+  Checkpoint : /home/cs25m115/mamba/checkpoints/mambaedge_best.pth
+  Device     : cuda:0
+  Start      : 2026-04-26 20:13:05
+============================================================
+[MambaEdge] Model ready on cuda  | params: 170,548  | Triton SSM: False
+
+── Demo 1: predict from address list ──
+  Input : last 32 of 40 addresses
+  Top-1: page=  0  offset= 0  addr=0x00000000  prob=0.9030
+  Top-2: page=511  offset= 0  addr=0x001ff000  prob=0.0009
+  Top-3: page=200  offset= 0  addr=0x000c8000  prob=0.0002
+
+── Demo 2: streaming (step by step) ──
+  step  31: → prefetch 0x00000000  (page=0, offset=0)
+  step  32: → prefetch 0x00000000  (page=0, offset=0)
+  step  33: → prefetch 0x00000000  (page=0, offset=0)
+  step  34: → prefetch 0x00000000  (page=0, offset=0)
+  step  35: → prefetch 0x00000000  (page=0, offset=0)
+
+── Demo 3: full trace 603.bwaves_s-1080B.champsimtrace.xz ──
+
+[MambaEdge] Predicting trace: 603.bwaves_s-1080B.champsimtrace.xz
+  Loading trace ... 37 accesses loaded in 2425.7s
+  Running inference ... done in 0.1s
+
+  ── Results: 603.bwaves_s-1080B.champsimtrace.xz ──
+  Page  accuracy (exact) :  100.00%
+  Offset accuracy (exact):  100.00%
+  Address accuracy       :  100.00%  ← page+offset both correct
+  Total time             : 2425.8s  (59 predictions/sec)
+
+  Results saved → /home/cs25m115/mamba/checkpoints/mambaedge_sim_results.json
+
+============================================================
+  Finished   : 2026-04-26 20:53:32
+  Exit code  : 0
+============================================================
+
+  >>> 603.bwaves_s-1740B.champsimtrace.xz
+[INFO] GPU sm_61 < sm_70 — using pure-PyTorch SSM.
+============================================================
+  Script     : mambaedge_inference.py
+  Checkpoint : /home/cs25m115/mamba/checkpoints/mambaedge_best.pth
+  Device     : cuda:0
+  Start      : 2026-04-26 20:53:39
+============================================================
+[MambaEdge] Model ready on cuda  | params: 170,548  | Triton SSM: False
+
+── Demo 1: predict from address list ──
+  Input : last 32 of 40 addresses
+  Top-1: page=  0  offset= 0  addr=0x00000000  prob=0.9030
+  Top-2: page=511  offset= 0  addr=0x001ff000  prob=0.0009
+  Top-3: page=200  offset= 0  addr=0x000c8000  prob=0.0002
+
+── Demo 2: streaming (step by step) ──
+  step  31: → prefetch 0x00000000  (page=0, offset=0)
+  step  32: → prefetch 0x00000000  (page=0, offset=0)
+  step  33: → prefetch 0x00000000  (page=0, offset=0)
+  step  34: → prefetch 0x00000000  (page=0, offset=0)
+  step  35: → prefetch 0x00000000  (page=0, offset=0)
+
+── Demo 3: full trace 603.bwaves_s-1740B.champsimtrace.xz ──
+
+[MambaEdge] Predicting trace: 603.bwaves_s-1740B.champsimtrace.xz
+  Loading trace ... 37,589 accesses loaded in 2032.0s
+  Running inference ... done in 1.5s
+
+  ── Results: 603.bwaves_s-1740B.champsimtrace.xz ──
+  Page  accuracy (exact) :   99.79%
+  Offset accuracy (exact):   98.21%
+  Address accuracy       :   98.21%  ← page+offset both correct
+  Total time             : 2033.5s  (25,602 predictions/sec)
+
+  Results saved → /home/cs25m115/mamba/checkpoints/mambaedge_sim_results.json
+
+============================================================
+  Finished   : 2026-04-26 21:27:33
+  Exit code  : 0
+============================================================
+
+  >>> 603.bwaves_s-2609B.champsimtrace.xz
+[INFO] GPU sm_61 < sm_70 — using pure-PyTorch SSM.
+============================================================
+  Script     : mambaedge_inference.py
+  Checkpoint : /home/cs25m115/mamba/checkpoints/mambaedge_best.pth
+  Device     : cuda:0
+  Start      : 2026-04-26 21:27:40
+============================================================
+[MambaEdge] Model ready on cuda  | params: 170,548  | Triton SSM: False
+
+── Demo 1: predict from address list ──
+  Input : last 32 of 40 addresses
+  Top-1: page=  0  offset= 0  addr=0x00000000  prob=0.9030
+  Top-2: page=511  offset= 0  addr=0x001ff000  prob=0.0009
+  Top-3: page=200  offset= 0  addr=0x000c8000  prob=0.0002
+
+── Demo 2: streaming (step by step) ──
+  step  31: → prefetch 0x00000000  (page=0, offset=0)
+  step  32: → prefetch 0x00000000  (page=0, offset=0)
+  step  33: → prefetch 0x00000000  (page=0, offset=0)
+  step  34: → prefetch 0x00000000  (page=0, offset=0)
+  step  35: → prefetch 0x00000000  (page=0, offset=0)
+
+── Demo 3: full trace 603.bwaves_s-2609B.champsimtrace.xz ──
+
+[MambaEdge] Predicting trace: 603.bwaves_s-2609B.champsimtrace.xz
+  Loading trace ... 9,326 accesses loaded in 2123.3s
+  Running inference ... done in 0.6s
+
+  ── Results: 603.bwaves_s-2609B.champsimtrace.xz ──
+  Page  accuracy (exact) :   99.95%
+  Offset accuracy (exact):   99.64%
+  Address accuracy       :   99.64%  ← page+offset both correct
+  Total time             : 2123.9s  (16,686 predictions/sec)
+
+  Results saved → /home/cs25m115/mamba/checkpoints/mambaedge_sim_results.json
+
+============================================================
+  Finished   : 2026-04-26 22:03:05
+  Exit code  : 0
+============================================================
+
+  >>> 603.bwaves_s-2931B.champsimtrace.xz
+[INFO] GPU sm_61 < sm_70 — using pure-PyTorch SSM.
+============================================================
+  Script     : mambaedge_inference.py
+  Checkpoint : /home/cs25m115/mamba/checkpoints/mambaedge_best.pth
+  Device     : cuda:0
+  Start      : 2026-04-26 22:03:13
+============================================================
+[MambaEdge] Model ready on cuda  | params: 170,548  | Triton SSM: False
+
+── Demo 1: predict from address list ──
+  Input : last 32 of 40 addresses
+  Top-1: page=  0  offset= 0  addr=0x00000000  prob=0.9030
+  Top-2: page=511  offset= 0  addr=0x001ff000  prob=0.0009
+  Top-3: page=200  offset= 0  addr=0x000c8000  prob=0.0002
+
+── Demo 2: streaming (step by step) ──
+  step  31: → prefetch 0x00000000  (page=0, offset=0)
+  step  32: → prefetch 0x00000000  (page=0, offset=0)
+  step  33: → prefetch 0x00000000  (page=0, offset=0)
+  step  34: → prefetch 0x00000000  (page=0, offset=0)
+  step  35: → prefetch 0x00000000  (page=0, offset=0)
+
+── Demo 3: full trace 603.bwaves_s-2931B.champsimtrace.xz ──
+
+[MambaEdge] Predicting trace: 603.bwaves_s-2931B.champsimtrace.xz
+  Loading trace ... 

@@ -1,0 +1,563 @@
+============================================================
+  Job ID     : 4573
+  Node       : node006
+  Start      : Tue Apr 28 02:06:50 IST 2026
+  Script     : /home/cs25m115/mamba_inf/sim_no_ipex.py
+  Checkpoint : /home/cs25m115/mamba/checkpoints/mambaedge_best.pth
+  Trace dir  : /home/cs25m115/spec2006
+============================================================
+
+0, NVIDIA GeForce GTX 1080 Ti, 11264 MiB, 6.1
+1, NVIDIA GeForce GTX 1080 Ti, 11264 MiB, 6.1
+2, NVIDIA GeForce GTX 1080 Ti, 11264 MiB, 6.1
+
+Traces found (.trace.xz) : 9
+
+------------------------------------------------------------
+ Running ChampSim simulation on 9 trace(s) ...
+------------------------------------------------------------
+
+[WARN] GPU 0 sm_6x < sm_70. Using PyTorch SSM fallback.
+Model loaded on cuda  |  ARCH: {'n_pages': 512, 'n_offsets': 64, 'd_model': 64, 'n_layers': 4, 'd_state': 16, 'expand': 2, 'dropout': 0.0}
+Found 9 trace(s) in /home/cs25m115/spec2006
+  bwaves_1609B.trace.xz
+  cactusADM_1039B.trace.xz
+  gcc_13B.trace.xz
+  lbm_1004B.trace.xz
+  mcf_158B.trace.xz
+  mcf_46B.trace.xz
+  omnetpp_340B.trace.xz
+  wrf_1650B.trace.xz
+  xalancbmk_748B.trace.xz
+
+======================================================================
+  MambaEdge ChampSim Simulation  |  Trace: bwaves_1609B.trace.xz  |  Degree: 1x
+======================================================================
+  [cache HIT]  2606a4309832218b43c2b4d2f827a2f0.npz
+
+======================================================================
+  Results: bwaves_1609B.trace.xz
+======================================================================
+  Warmup: 9,538   |   Sim: 14,307
+
+  ── Miss Reduction ───────────────────────────────────────────────
+  LLC LOAD MPKI  baseline    :    1000.00
+  LLC LOAD MPKI  w/ MambaEdge:       1.26
+  MPKI Reduction             :     998.74
+  Misses prevented by PF     :     14,289
+  Miss rate  baseline        :  100.0000%
+  Miss rate  w/ MambaEdge   :    0.1258%
+  Miss Reduction             :     99.87%
+
+  ── Cache Pollution ──────────────────────────────────────────────
+  Useless prefetches         :         18
+  Pollution rate             :      0.13%
+  Wasted cycles              :        540
+  Cycle overhead             :      9.44%
+
+  ── Latency: AMAT (cycles) ───────────────────────────────────────
+  AMAT  baseline             :     230.00 cy
+  AMAT  w/ MambaEdge         :      30.25 cy
+  AMAT  reduction            :     199.75 cy  (86.85%)
+
+  ── Memory Throughput ────────────────────────────────────────────
+  Throughput  baseline       :   480.0000 GB/s
+  Throughput  w/ MambaEdge   : 2746944.0000 GB/s
+  Throughput gain            : 572180.00%
+
+  ── Simulated Hardware Execution Time ────────────────────────────
+  (uses memory-latency cycle model, NOT Python wall-clock time)
+  Exec time  baseline        :   953.8000 µs
+  Exec time  w/ MambaEdge    :   144.2700 µs
+  Execution time reduction   :     84.87%
+
+  ── Energy (µJ) ──────────────────────────────────────────────────
+  Energy  baseline           :      1716.8400 µJ
+  Energy  w/ MambaEdge       :       273.9480 µJ
+  Energy savings (total)     :      1442.8920 µJ  (84.04%)
+  Energy savings (dyn only)  :         79.89%  ← primary metric
+  Breakdown  baseline:   LLC hits 0.00  DRAM 286.14  static 1430.70  µJ
+  Breakdown  w/ PF  :   LLC hits 14.29  DRAM 0.36  fills 42.87  poll 0.03  static 216.41  µJ
+  Static leakage savings     :      1214.2950 µJ  (84.87%)  [from shorter exec]
+
+  ── Power (W)  [normalised to same window] ───────────────────────
+  Power  baseline            :     1.8000 W
+  Power  w/ MambaEdge        :     0.2872 W
+  Power savings              :     1.5128 W  (84.04%)
+
+  ── Prefetcher Performance ───────────────────────────────────────
+  Prefetches Issued          :       14,307
+  Prefetches Useful          :       14,289   (99.9% accuracy)
+  Prefetches Useless         :           18   (0.1% overprediction)
+  Prefetch Coverage          :      99.87%
+  Page Coverage              :      99.98%
+  Address Accuracy (exact)   :      99.87%
+
+  ── IPC ──────────────────────────────────────────────────────────
+  IPC  baseline              :       2.50
+  IPC  w/ MambaEdge          :   14307.00
+  IPC Speedup                :   5722.800x
+
+  Python wall-clock time     : 0.0s
+======================================================================
+
+======================================================================
+  MambaEdge ChampSim Simulation  |  Trace: cactusADM_1039B.trace.xz  |  Degree: 1x
+======================================================================
+  [cache HIT]  55871f9ec186b3fbffafbeba9367ceb5.npz
+  ERROR: trace too short (0 accesses)
+
+======================================================================
+  MambaEdge ChampSim Simulation  |  Trace: gcc_13B.trace.xz  |  Degree: 1x
+======================================================================
+  [cache HIT]  05ae3e58d6737bfd22eaccbd99580175.npz
+
+======================================================================
+  Results: gcc_13B.trace.xz
+======================================================================
+  Warmup: 607   |   Sim: 911
+
+  ── Miss Reduction ───────────────────────────────────────────────
+  LLC LOAD MPKI  baseline    :    1000.00
+  LLC LOAD MPKI  w/ MambaEdge:       0.00
+  MPKI Reduction             :    1000.00
+  Misses prevented by PF     :        911
+  Miss rate  baseline        :  100.0000%
+  Miss rate  w/ MambaEdge   :    0.0000%
+  Miss Reduction             :    100.00%
+
+  ── Cache Pollution ──────────────────────────────────────────────
+  Useless prefetches         :          0
+  Pollution rate             :      0.00%
+  Wasted cycles              :          0
+  Cycle overhead             :      0.00%
+
+  ── Latency: AMAT (cycles) ───────────────────────────────────────
+  AMAT  baseline             :     230.00 cy
+  AMAT  w/ MambaEdge         :      30.00 cy
+  AMAT  reduction            :     200.00 cy  (86.96%)
+
+  ── Memory Throughput ────────────────────────────────────────────
+  Throughput  baseline       :   480.0000 GB/s
+  Throughput  w/ MambaEdge   : 174912.0000 GB/s
+  Throughput gain            :  36340.00%
+
+  ── Simulated Hardware Execution Time ────────────────────────────
+  (uses memory-latency cycle model, NOT Python wall-clock time)
+  Exec time  baseline        :    60.7333 µs
+  Exec time  w/ MambaEdge    :     9.1100 µs
+  Execution time reduction   :     85.00%
+
+  ── Energy (µJ) ──────────────────────────────────────────────────
+  Energy  baseline           :       109.3200 µJ
+  Energy  w/ MambaEdge       :        17.3090 µJ
+  Energy savings (total)     :        92.0110 µJ  (84.17%)
+  Energy savings (dyn only)  :         80.00%  ← primary metric
+  Breakdown  baseline:   LLC hits 0.00  DRAM 18.22  static 91.10  µJ
+  Breakdown  w/ PF  :   LLC hits 0.91  DRAM 0.00  fills 2.73  poll 0.00  static 13.66  µJ
+  Static leakage savings     :        77.4350 µJ  (85.00%)  [from shorter exec]
+
+  ── Power (W)  [normalised to same window] ───────────────────────
+  Power  baseline            :     1.8000 W
+  Power  w/ MambaEdge        :     0.2850 W
+  Power savings              :     1.5150 W  (84.17%)
+
+  ── Prefetcher Performance ───────────────────────────────────────
+  Prefetches Issued          :          911
+  Prefetches Useful          :          911   (100.0% accuracy)
+  Prefetches Useless         :            0   (0.0% overprediction)
+  Prefetch Coverage          :     100.00%
+  Page Coverage              :     100.00%
+  Address Accuracy (exact)   :     100.00%
+
+  ── IPC ──────────────────────────────────────────────────────────
+  IPC  baseline              :       2.50
+  IPC  w/ MambaEdge          :     911.00
+  IPC Speedup                :    364.400x
+
+  Python wall-clock time     : 0.0s
+======================================================================
+
+======================================================================
+  MambaEdge ChampSim Simulation  |  Trace: lbm_1004B.trace.xz  |  Degree: 1x
+======================================================================
+  [cache HIT]  81d0d6b43e699a815ca80dab8ce3f54e.npz
+
+======================================================================
+  Results: lbm_1004B.trace.xz
+======================================================================
+  Warmup: 100   |   Sim: 151
+
+  ── Miss Reduction ───────────────────────────────────────────────
+  LLC LOAD MPKI  baseline    :    1000.00
+  LLC LOAD MPKI  w/ MambaEdge:       0.00
+  MPKI Reduction             :    1000.00
+  Misses prevented by PF     :        151
+  Miss rate  baseline        :  100.0000%
+  Miss rate  w/ MambaEdge   :    0.0000%
+  Miss Reduction             :    100.00%
+
+  ── Cache Pollution ──────────────────────────────────────────────
+  Useless prefetches         :          0
+  Pollution rate             :      0.00%
+  Wasted cycles              :          0
+  Cycle overhead             :      0.00%
+
+  ── Latency: AMAT (cycles) ───────────────────────────────────────
+  AMAT  baseline             :     230.00 cy
+  AMAT  w/ MambaEdge         :      30.00 cy
+  AMAT  reduction            :     200.00 cy  (86.96%)
+
+  ── Memory Throughput ────────────────────────────────────────────
+  Throughput  baseline       :   480.0000 GB/s
+  Throughput  w/ MambaEdge   : 28992.0000 GB/s
+  Throughput gain            :   5940.00%
+
+  ── Simulated Hardware Execution Time ────────────────────────────
+  (uses memory-latency cycle model, NOT Python wall-clock time)
+  Exec time  baseline        :    10.0667 µs
+  Exec time  w/ MambaEdge    :     1.5100 µs
+  Execution time reduction   :     85.00%
+
+  ── Energy (µJ) ──────────────────────────────────────────────────
+  Energy  baseline           :        18.1200 µJ
+  Energy  w/ MambaEdge       :         2.8690 µJ
+  Energy savings (total)     :        15.2510 µJ  (84.17%)
+  Energy savings (dyn only)  :         80.00%  ← primary metric
+  Breakdown  baseline:   LLC hits 0.00  DRAM 3.02  static 15.10  µJ
+  Breakdown  w/ PF  :   LLC hits 0.15  DRAM 0.00  fills 0.45  poll 0.00  static 2.27  µJ
+  Static leakage savings     :        12.8350 µJ  (85.00%)  [from shorter exec]
+
+  ── Power (W)  [normalised to same window] ───────────────────────
+  Power  baseline            :     1.8000 W
+  Power  w/ MambaEdge        :     0.2850 W
+  Power savings              :     1.5150 W  (84.17%)
+
+  ── Prefetcher Performance ───────────────────────────────────────
+  Prefetches Issued          :          151
+  Prefetches Useful          :          151   (100.0% accuracy)
+  Prefetches Useless         :            0   (0.0% overprediction)
+  Prefetch Coverage          :     100.00%
+  Page Coverage              :     100.00%
+  Address Accuracy (exact)   :     100.00%
+
+  ── IPC ──────────────────────────────────────────────────────────
+  IPC  baseline              :       2.50
+  IPC  w/ MambaEdge          :     151.00
+  IPC Speedup                :     60.400x
+
+  Python wall-clock time     : 0.0s
+======================================================================
+
+======================================================================
+  MambaEdge ChampSim Simulation  |  Trace: mcf_158B.trace.xz  |  Degree: 1x
+======================================================================
+  [cache HIT]  fd958168fa8f629b403e5c966394063e.npz
+  ERROR: trace too short (25 accesses)
+
+======================================================================
+  MambaEdge ChampSim Simulation  |  Trace: mcf_46B.trace.xz  |  Degree: 1x
+======================================================================
+  [cache HIT]  e77973f4112453d9259d9e61ac43a6dd.npz
+
+======================================================================
+  Results: mcf_46B.trace.xz
+======================================================================
+  Warmup: 709   |   Sim: 1,065
+
+  ── Miss Reduction ───────────────────────────────────────────────
+  LLC LOAD MPKI  baseline    :    1000.00
+  LLC LOAD MPKI  w/ MambaEdge:       1.88
+  MPKI Reduction             :     998.12
+  Misses prevented by PF     :      1,063
+  Miss rate  baseline        :  100.0000%
+  Miss rate  w/ MambaEdge   :    0.1878%
+  Miss Reduction             :     99.81%
+
+  ── Cache Pollution ──────────────────────────────────────────────
+  Useless prefetches         :          2
+  Pollution rate             :      0.19%
+  Wasted cycles              :         60
+  Cycle overhead             :     14.08%
+
+  ── Latency: AMAT (cycles) ───────────────────────────────────────
+  AMAT  baseline             :     230.00 cy
+  AMAT  w/ MambaEdge         :      30.38 cy
+  AMAT  reduction            :     199.62 cy  (86.79%)
+
+  ── Memory Throughput ────────────────────────────────────────────
+  Throughput  baseline       :   480.0000 GB/s
+  Throughput  w/ MambaEdge   : 204480.0000 GB/s
+  Throughput gain            :  42500.00%
+
+  ── Simulated Hardware Execution Time ────────────────────────────
+  (uses memory-latency cycle model, NOT Python wall-clock time)
+  Exec time  baseline        :    71.0000 µs
+  Exec time  w/ MambaEdge    :    10.7833 µs
+  Execution time reduction   :     84.81%
+
+  ── Energy (µJ) ──────────────────────────────────────────────────
+  Energy  baseline           :       127.8000 µJ
+  Energy  w/ MambaEdge       :        20.4700 µJ
+  Energy savings (total)     :       107.3300 µJ  (83.98%)
+  Energy savings (dyn only)  :         79.84%  ← primary metric
+  Breakdown  baseline:   LLC hits 0.00  DRAM 21.30  static 106.50  µJ
+  Breakdown  w/ PF  :   LLC hits 1.06  DRAM 0.04  fills 3.19  poll 0.00  static 16.18  µJ
+  Static leakage savings     :        90.3250 µJ  (84.81%)  [from shorter exec]
+
+  ── Power (W)  [normalised to same window] ───────────────────────
+  Power  baseline            :     1.8000 W
+  Power  w/ MambaEdge        :     0.2883 W
+  Power savings              :     1.5117 W  (83.98%)
+
+  ── Prefetcher Performance ───────────────────────────────────────
+  Prefetches Issued          :        1,065
+  Prefetches Useful          :        1,063   (99.8% accuracy)
+  Prefetches Useless         :            2   (0.2% overprediction)
+  Prefetch Coverage          :      99.81%
+  Page Coverage              :     100.00%
+  Address Accuracy (exact)   :      99.81%
+
+  ── IPC ──────────────────────────────────────────────────────────
+  IPC  baseline              :       2.50
+  IPC  w/ MambaEdge          :    1065.00
+  IPC Speedup                :    426.000x
+
+  Python wall-clock time     : 0.0s
+======================================================================
+
+======================================================================
+  MambaEdge ChampSim Simulation  |  Trace: omnetpp_340B.trace.xz  |  Degree: 1x
+======================================================================
+  [cache HIT]  0fc07952e43355fcb1a2fdacd380f929.npz
+
+======================================================================
+  Results: omnetpp_340B.trace.xz
+======================================================================
+  Warmup: 65,881   |   Sim: 98,822
+
+  ── Miss Reduction ───────────────────────────────────────────────
+  LLC LOAD MPKI  baseline    :    1000.00
+  LLC LOAD MPKI  w/ MambaEdge:      15.43
+  MPKI Reduction             :     984.57
+  Misses prevented by PF     :     97,297
+  Miss rate  baseline        :  100.0000%
+  Miss rate  w/ MambaEdge   :    1.5432%
+  Miss Reduction             :     98.46%
+
+  ── Cache Pollution ──────────────────────────────────────────────
+  Useless prefetches         :      1,525
+  Pollution rate             :      1.54%
+  Wasted cycles              :     45,750
+  Cycle overhead             :    115.74%
+
+  ── Latency: AMAT (cycles) ───────────────────────────────────────
+  AMAT  baseline             :     230.00 cy
+  AMAT  w/ MambaEdge         :      33.09 cy
+  AMAT  reduction            :     196.91 cy  (85.61%)
+
+  ── Memory Throughput ────────────────────────────────────────────
+  Throughput  baseline       :   480.0000 GB/s
+  Throughput  w/ MambaEdge   : 18973824.0000 GB/s
+  Throughput gain            : 3952780.00%
+
+  ── Simulated Hardware Execution Time ────────────────────────────
+  (uses memory-latency cycle model, NOT Python wall-clock time)
+  Exec time  baseline        :  6588.1333 µs
+  Exec time  w/ MambaEdge    :  1089.8867 µs
+  Execution time reduction   :     83.46%
+
+  ── Energy (µJ) ──────────────────────────────────────────────────
+  Energy  baseline           :     11858.6400 µJ
+  Energy  w/ MambaEdge       :      2056.8055 µJ
+  Energy savings (total)     :      9801.8345 µJ  (82.66%)
+  Energy savings (dyn only)  :         78.65%  ← primary metric
+  Breakdown  baseline:   LLC hits 0.00  DRAM 1976.44  static 9882.20  µJ
+  Breakdown  w/ PF  :   LLC hits 97.30  DRAM 30.50  fills 291.89  poll 2.29  static 1634.83  µJ
+  Static leakage savings     :      8247.3700 µJ  (83.46%)  [from shorter exec]
+
+  ── Power (W)  [normalised to same window] ───────────────────────
+  Power  baseline            :     1.8000 W
+  Power  w/ MambaEdge        :     0.3122 W
+  Power savings              :     1.4878 W  (82.66%)
+
+  ── Prefetcher Performance ───────────────────────────────────────
+  Prefetches Issued          :       98,822
+  Prefetches Useful          :       97,297   (98.5% accuracy)
+  Prefetches Useless         :        1,525   (1.5% overprediction)
+  Prefetch Coverage          :      98.46%
+  Page Coverage              :     100.00%
+  Address Accuracy (exact)   :      98.46%
+
+  ── IPC ──────────────────────────────────────────────────────────
+  IPC  baseline              :       2.50
+  IPC  w/ MambaEdge          :   98822.00
+  IPC Speedup                :  39528.800x
+
+  Python wall-clock time     : 0.2s
+======================================================================
+
+======================================================================
+  MambaEdge ChampSim Simulation  |  Trace: wrf_1650B.trace.xz  |  Degree: 1x
+======================================================================
+  [cache HIT]  12e21b11f703cbb591289a8e6586d2c4.npz
+
+======================================================================
+  Results: wrf_1650B.trace.xz
+======================================================================
+  Warmup: 3,710   |   Sim: 5,566
+
+  ── Miss Reduction ───────────────────────────────────────────────
+  LLC LOAD MPKI  baseline    :    1000.00
+  LLC LOAD MPKI  w/ MambaEdge:       0.00
+  MPKI Reduction             :    1000.00
+  Misses prevented by PF     :      5,566
+  Miss rate  baseline        :  100.0000%
+  Miss rate  w/ MambaEdge   :    0.0000%
+  Miss Reduction             :    100.00%
+
+  ── Cache Pollution ──────────────────────────────────────────────
+  Useless prefetches         :          0
+  Pollution rate             :      0.00%
+  Wasted cycles              :          0
+  Cycle overhead             :      0.00%
+
+  ── Latency: AMAT (cycles) ───────────────────────────────────────
+  AMAT  baseline             :     230.00 cy
+  AMAT  w/ MambaEdge         :      30.00 cy
+  AMAT  reduction            :     200.00 cy  (86.96%)
+
+  ── Memory Throughput ────────────────────────────────────────────
+  Throughput  baseline       :   480.0000 GB/s
+  Throughput  w/ MambaEdge   : 1068672.0000 GB/s
+  Throughput gain            : 222540.00%
+
+  ── Simulated Hardware Execution Time ────────────────────────────
+  (uses memory-latency cycle model, NOT Python wall-clock time)
+  Exec time  baseline        :   371.0667 µs
+  Exec time  w/ MambaEdge    :    55.6600 µs
+  Execution time reduction   :     85.00%
+
+  ── Energy (µJ) ──────────────────────────────────────────────────
+  Energy  baseline           :       667.9200 µJ
+  Energy  w/ MambaEdge       :       105.7540 µJ
+  Energy savings (total)     :       562.1660 µJ  (84.17%)
+  Energy savings (dyn only)  :         80.00%  ← primary metric
+  Breakdown  baseline:   LLC hits 0.00  DRAM 111.32  static 556.60  µJ
+  Breakdown  w/ PF  :   LLC hits 5.57  DRAM 0.00  fills 16.70  poll 0.00  static 83.49  µJ
+  Static leakage savings     :       473.1100 µJ  (85.00%)  [from shorter exec]
+
+  ── Power (W)  [normalised to same window] ───────────────────────
+  Power  baseline            :     1.8000 W
+  Power  w/ MambaEdge        :     0.2850 W
+  Power savings              :     1.5150 W  (84.17%)
+
+  ── Prefetcher Performance ───────────────────────────────────────
+  Prefetches Issued          :        5,566
+  Prefetches Useful          :        5,566   (100.0% accuracy)
+  Prefetches Useless         :            0   (0.0% overprediction)
+  Prefetch Coverage          :     100.00%
+  Page Coverage              :     100.00%
+  Address Accuracy (exact)   :     100.00%
+
+  ── IPC ──────────────────────────────────────────────────────────
+  IPC  baseline              :       2.50
+  IPC  w/ MambaEdge          :    5566.00
+  IPC Speedup                :   2226.400x
+
+  Python wall-clock time     : 0.0s
+======================================================================
+
+======================================================================
+  MambaEdge ChampSim Simulation  |  Trace: xalancbmk_748B.trace.xz  |  Degree: 1x
+======================================================================
+  [cache HIT]  f0d917aacabc77be42b3d8f688cbcddd.npz
+
+======================================================================
+  Results: xalancbmk_748B.trace.xz
+======================================================================
+  Warmup: 2,874   |   Sim: 4,313
+
+  ── Miss Reduction ───────────────────────────────────────────────
+  LLC LOAD MPKI  baseline    :    1000.00
+  LLC LOAD MPKI  w/ MambaEdge:      15.77
+  MPKI Reduction             :     984.23
+  Misses prevented by PF     :      4,245
+  Miss rate  baseline        :  100.0000%
+  Miss rate  w/ MambaEdge   :    1.5766%
+  Miss Reduction             :     98.42%
+
+  ── Cache Pollution ──────────────────────────────────────────────
+  Useless prefetches         :         68
+  Pollution rate             :      1.58%
+  Wasted cycles              :      2,040
+  Cycle overhead             :    118.25%
+
+  ── Latency: AMAT (cycles) ───────────────────────────────────────
+  AMAT  baseline             :     230.00 cy
+  AMAT  w/ MambaEdge         :      33.15 cy
+  AMAT  reduction            :     196.85 cy  (85.59%)
+
+  ── Memory Throughput ────────────────────────────────────────────
+  Throughput  baseline       :   480.0000 GB/s
+  Throughput  w/ MambaEdge   : 828096.0000 GB/s
+  Throughput gain            : 172420.00%
+
+  ── Simulated Hardware Execution Time ────────────────────────────
+  (uses memory-latency cycle model, NOT Python wall-clock time)
+  Exec time  baseline        :   287.5333 µs
+  Exec time  w/ MambaEdge    :    47.6633 µs
+  Execution time reduction   :     83.42%
+
+  ── Energy (µJ) ──────────────────────────────────────────────────
+  Energy  baseline           :       517.5600 µJ
+  Energy  w/ MambaEdge       :        89.9370 µJ
+  Energy savings (total)     :       427.6230 µJ  (82.62%)
+  Energy savings (dyn only)  :         78.62%  ← primary metric
+  Breakdown  baseline:   LLC hits 0.00  DRAM 86.26  static 431.30  µJ
+  Breakdown  w/ PF  :   LLC hits 4.25  DRAM 1.36  fills 12.73  poll 0.10  static 71.50  µJ
+  Static leakage savings     :       359.8050 µJ  (83.42%)  [from shorter exec]
+
+  ── Power (W)  [normalised to same window] ───────────────────────
+  Power  baseline            :     1.8000 W
+  Power  w/ MambaEdge        :     0.3128 W
+  Power savings              :     1.4872 W  (82.62%)
+
+  ── Prefetcher Performance ───────────────────────────────────────
+  Prefetches Issued          :        4,313
+  Prefetches Useful          :        4,245   (98.4% accuracy)
+  Prefetches Useless         :           68   (1.6% overprediction)
+  Prefetch Coverage          :      98.42%
+  Page Coverage              :     100.00%
+  Address Accuracy (exact)   :      98.42%
+
+  ── IPC ──────────────────────────────────────────────────────────
+  IPC  baseline              :       2.50
+  IPC  w/ MambaEdge          :    4313.00
+  IPC Speedup                :   1725.200x
+
+  Python wall-clock time     : 0.0s
+======================================================================
+
+===================================================================================================================================================================
+  SUMMARY — All Traces
+===================================================================================================================================================================
+  Trace                           AddrAcc  PageCov     Useful    Acc%    Useless   Over%  MissRed   AMAT%        BW%  EnrgSav%  PwrSav% Pollution%     IPCSpd
+  -----------------------------------------------------------------------------------------------------------------------------------------------------------------
+  bwaves_1609B.trace.xz            99.87%   99.98%     14,289  99.87%         18   0.13%   99.87%  86.85% 572180.00%    79.89%   84.04%      0.13%  5722.800x
+  gcc_13B.trace.xz                100.00%  100.00%        911 100.00%          0   0.00%  100.00%  86.96%  36340.00%    80.00%   84.17%      0.00%   364.400x
+  lbm_1004B.trace.xz              100.00%  100.00%        151 100.00%          0   0.00%  100.00%  86.96%   5940.00%    80.00%   84.17%      0.00%    60.400x
+  mcf_46B.trace.xz                 99.81%  100.00%      1,063  99.81%          2   0.19%   99.81%  86.79%  42500.00%    79.84%   83.98%      0.19%   426.000x
+  omnetpp_340B.trace.xz            98.46%  100.00%     97,297  98.46%      1,525   1.54%   98.46%  85.61% 3952780.00%    78.65%   82.66%      1.54% 39528.800x
+  wrf_1650B.trace.xz              100.00%  100.00%      5,566 100.00%          0   0.00%  100.00%  86.96% 222540.00%    80.00%   84.17%      0.00%  2226.400x
+  xalancbmk_748B.trace.xz          98.42%  100.00%      4,245  98.42%         68   1.58%   98.42%  85.59% 172420.00%    78.62%   82.62%      1.58%  1725.200x
+  -----------------------------------------------------------------------------------------------------------------------------------------------------------------
+  AVERAGE                          99.51%  100.00%     17,646  99.51%        230   0.49%   99.51%  86.53% 714957.14%    79.57%   83.69%      0.49%  7150.571x
+===================================================================================================================================================================
+
+  Results saved → /home/cs25m115/mamba_inf/mambaedge_no_ipex_full_metrics_results_champ.json
+
+============================================================
+  Finished  : Tue Apr 28 02:07:00 IST 2026
+  Exit code : 0
+============================================================

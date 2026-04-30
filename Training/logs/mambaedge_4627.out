@@ -1,0 +1,402 @@
+============================================================
+  Job ID     : 4627
+  Node       : node004
+  Num GPUs   : 3
+  Start      : Wed Apr 29 23:42:47 IST 2026
+============================================================
+
+0, NVIDIA GeForce GTX 1080 Ti, 11264 MiB
+1, NVIDIA GeForce GTX 1080 Ti, 11264 MiB
+2, NVIDIA GeForce GTX 1080 Ti, 11264 MiB
+
+Launching torchrun with 3 GPU(s) ...
+
+[WARN] GPU 0 (NVIDIA GeForce GTX 1080 Ti) is sm_61 — below sm_70 minimum for mamba_ssm Triton kernels. Forcing pure-PyTorch fallback.[WARN] GPU 0 (NVIDIA GeForce GTX 1080 Ti) is sm_61 — below sm_70 minimum for mamba_ssm Triton kernels. Forcing pure-PyTorch fallback.
+
+[WARN] mamba_ssm disabled — GPU is sm_61 (need sm_70+). Using pure-PyTorch SSM fallback (same accuracy, slightly slower).
+[WARN] mamba_ssm disabled — GPU is sm_61 (need sm_70+). Using pure-PyTorch SSM fallback (same accuracy, slightly slower).
+[WARN] GPU 0 (NVIDIA GeForce GTX 1080 Ti) is sm_61 — below sm_70 minimum for mamba_ssm Triton kernels. Forcing pure-PyTorch fallback.
+[WARN] mamba_ssm disabled — GPU is sm_61 (need sm_70+). Using pure-PyTorch SSM fallback (same accuracy, slightly slower).
+[INFO] Found 50 trace file(s) in /home/cs25m115/spec2017
+[INFO] Found 50 trace file(s) in /home/cs25m115/spec2017
+[INFO] Found 50 trace file(s) in /home/cs25m115/spec2017
+[rank0] Pre-loading / caching traces before DDP init ...
+[CACHE] 602.gcc_s-1850B.champsimtrace.xz: 5,879 accesses | 1 unique pages
+[CACHE] 602.gcc_s-1850B.champsimtrace.xz: 5,879 accesses | 1 unique pages
+[CACHE] 602.gcc_s-1850B.champsimtrace.xz: 5,879 accesses | 1 unique pages
+[CACHE] 602.gcc_s-2226B.champsimtrace.xz: 14,115 accesses | 1 unique pages
+[CACHE] 602.gcc_s-2226B.champsimtrace.xz: 14,115 accesses | 1 unique pages
+[CACHE] 602.gcc_s-2226B.champsimtrace.xz: 14,115 accesses | 1 unique pages
+[CACHE] 602.gcc_s-2375B.champsimtrace.xz: 16,464 accesses | 1 unique pages[CACHE] 602.gcc_s-2375B.champsimtrace.xz: 16,464 accesses | 1 unique pages
+
+[CACHE] 602.gcc_s-2375B.champsimtrace.xz: 16,464 accesses | 1 unique pages
+[CACHE] 602.gcc_s-734B.champsimtrace.xz: 11,069 accesses | 1 unique pages
+[CACHE] 602.gcc_s-734B.champsimtrace.xz: 11,069 accesses | 1 unique pages
+[CACHE] 602.gcc_s-734B.champsimtrace.xz: 11,069 accesses | 1 unique pages
+[CACHE] 603.bwaves_s-1080B.champsimtrace.xz: 147 accesses | 1 unique pages
+[CACHE] 603.bwaves_s-1080B.champsimtrace.xz: 147 accesses | 1 unique pages
+[CACHE] 603.bwaves_s-1080B.champsimtrace.xz: 147 accesses | 1 unique pages
+[CACHE] 603.bwaves_s-1740B.champsimtrace.xz: 41,808 accesses | 2 unique pages
+[CACHE] 603.bwaves_s-1740B.champsimtrace.xz: 41,808 accesses | 2 unique pages
+[CACHE] 603.bwaves_s-1740B.champsimtrace.xz: 41,808 accesses | 2 unique pages
+[CACHE] 603.bwaves_s-2609B.champsimtrace.xz: 8,916 accesses | 2 unique pages
+[CACHE] 603.bwaves_s-2609B.champsimtrace.xz: 8,916 accesses | 2 unique pages
+[CACHE] 603.bwaves_s-2609B.champsimtrace.xz: 8,916 accesses | 2 unique pages
+[CACHE] 603.bwaves_s-2931B.champsimtrace.xz: 6,561 accesses | 1 unique pages[CACHE] 603.bwaves_s-2931B.champsimtrace.xz: 6,561 accesses | 1 unique pages
+
+[CACHE] 603.bwaves_s-2931B.champsimtrace.xz: 6,561 accesses | 1 unique pages
+[NEW] 603.bwaves_s-3699B.champsimtrace.xz: 0 accesses — skipped
+[CACHE] 603.bwaves_s-5359B.champsimtrace.xz: 41 accesses | 1 unique pages
+[CACHE] 603.bwaves_s-891B.champsimtrace.xz: 72,850 accesses | 2 unique pages
+[CACHE] 605.mcf_s-1152B.champsimtrace.xz: 6,759 accesses | 1 unique pages
+[CACHE] 605.mcf_s-1536B.champsimtrace.xz: 15,221 accesses | 2 unique pages
+[CACHE] 605.mcf_s-1554B.champsimtrace.xz: 405 accesses | 1 unique pages
+[CACHE] 605.mcf_s-1644B.champsimtrace.xz: 9,249 accesses | 1 unique pages
+[CACHE] 605.mcf_s-472B.champsimtrace.xz: 3,513 accesses | 1 unique pages
+[CACHE] 605.mcf_s-484B.champsimtrace.xz: 5,946 accesses | 1 unique pages
+[CACHE] 605.mcf_s-665B.champsimtrace.xz: 17,684 accesses | 2 unique pages
+[CACHE] 605.mcf_s-782B.champsimtrace.xz: 8,766 accesses | 1 unique pages
+[CACHE] 605.mcf_s-994B.champsimtrace.xz: 182,314 accesses | 2 unique pages
+[CACHE] 607.cactuBSSN_s-2421B.champsimtrace.xz: 90,617 accesses | 2 unique pages
+[CACHE] 607.cactuBSSN_s-3477B.champsimtrace.xz: 10,717 accesses | 1 unique pages
+[CACHE] 607.cactuBSSN_s-4004B.champsimtrace.xz: 6,739 accesses | 2 unique pages
+[CACHE] 607.cactuBSSN_s-4248B.champsimtrace.xz: 352 accesses | 1 unique pages
+[CACHE] 619.lbm_s-2676B.champsimtrace.xz: 34,373 accesses | 2 unique pages
+[CACHE] 619.lbm_s-2677B.champsimtrace.xz: 8,652 accesses | 1 unique pages
+[CACHE] 619.lbm_s-3766B.champsimtrace.xz: 35,350 accesses | 2 unique pages
+[CACHE] 619.lbm_s-4268B.champsimtrace.xz: 8,453 accesses | 1 unique pages
+[CACHE] 620.omnetpp_s-141B.champsimtrace.xz: 200,000 accesses | 2 unique pages
+[CACHE] 620.omnetpp_s-874B.champsimtrace.xz: 200,000 accesses | 2 unique pages
+[CACHE] 621.wrf_s-575B.champsimtrace.xz: 10,317 accesses | 1 unique pages
+[CACHE] 621.wrf_s-6673B.champsimtrace.xz: 1,324 accesses | 1 unique pages
+[CACHE] 621.wrf_s-8065B.champsimtrace.xz: 200,000 accesses | 1 unique pages
+[CACHE] 621.wrf_s-8100B.champsimtrace.xz: 862 accesses | 1 unique pages
+[CACHE] 623.xalancbmk_s-10B.champsimtrace.xz: 9,434 accesses | 1 unique pages
+[CACHE] 623.xalancbmk_s-165B.champsimtrace.xz: 173,541 accesses | 2 unique pages
+[CACHE] 623.xalancbmk_s-202B.champsimtrace.xz: 62,598 accesses | 1 unique pages
+[CACHE] 623.xalancbmk_s-325B.champsimtrace.xz: 6,061 accesses | 1 unique pages
+[CACHE] 623.xalancbmk_s-592B.champsimtrace.xz: 1,411 accesses | 2 unique pages
+[CACHE] 623.xalancbmk_s-700B.champsimtrace.xz: 27,460 accesses | 1 unique pages
+[CACHE] 625.x264_s-12B.champsimtrace.xz: 131,716 accesses | 1 unique pages
+[CACHE] 625.x264_s-18B.champsimtrace.xz: 16,675 accesses | 1 unique pages
+[CACHE] 625.x264_s-20B.champsimtrace.xz: 1,761 accesses | 1 unique pages
+[CACHE] 625.x264_s-33B.champsimtrace.xz: 6,470 accesses | 1 unique pages
+[CACHE] 625.x264_s-39B.champsimtrace.xz: 1,453 accesses | 1 unique pages
+[CACHE] 627.cam4_s-490B.champsimtrace.xz: 200,000 accesses | 2 unique pages
+[CACHE] 627.cam4_s-573B.champsimtrace.xz: 410 accesses | 1 unique pages
+[CACHE] 628.pop2_s-17B.champsimtrace.xz: 70,764 accesses | 2 unique pages
+[CACHE] 631.deepsjeng_s-928B.champsimtrace.xz: 622 accesses | 1 unique pages
+[CACHE] 638.imagick_s-10316B.champsimtrace.xz: 15 accesses | 1 unique pages
+[NEW] 603.bwaves_s-3699B.champsimtrace.xz: 0 accesses — skipped
+[CACHE] 603.bwaves_s-5359B.champsimtrace.xz: 41 accesses | 1 unique pages
+[CACHE] 603.bwaves_s-891B.champsimtrace.xz: 72,850 accesses | 2 unique pages
+[CACHE] 605.mcf_s-1152B.champsimtrace.xz: 6,759 accesses | 1 unique pages
+[CACHE] 605.mcf_s-1536B.champsimtrace.xz: 15,221 accesses | 2 unique pages
+[CACHE] 605.mcf_s-1554B.champsimtrace.xz: 405 accesses | 1 unique pages
+[CACHE] 605.mcf_s-1644B.champsimtrace.xz: 9,249 accesses | 1 unique pages
+[CACHE] 605.mcf_s-472B.champsimtrace.xz: 3,513 accesses | 1 unique pages
+[CACHE] 605.mcf_s-484B.champsimtrace.xz: 5,946 accesses | 1 unique pages
+[CACHE] 605.mcf_s-665B.champsimtrace.xz: 17,684 accesses | 2 unique pages
+[CACHE] 605.mcf_s-782B.champsimtrace.xz: 8,766 accesses | 1 unique pages
+[CACHE] 605.mcf_s-994B.champsimtrace.xz: 182,314 accesses | 2 unique pages
+[CACHE] 607.cactuBSSN_s-2421B.champsimtrace.xz: 90,617 accesses | 2 unique pages
+[CACHE] 607.cactuBSSN_s-3477B.champsimtrace.xz: 10,717 accesses | 1 unique pages
+[CACHE] 607.cactuBSSN_s-4004B.champsimtrace.xz: 6,739 accesses | 2 unique pages
+[CACHE] 607.cactuBSSN_s-4248B.champsimtrace.xz: 352 accesses | 1 unique pages
+[CACHE] 619.lbm_s-2676B.champsimtrace.xz: 34,373 accesses | 2 unique pages
+[CACHE] 619.lbm_s-2677B.champsimtrace.xz: 8,652 accesses | 1 unique pages
+[CACHE] 619.lbm_s-3766B.champsimtrace.xz: 35,350 accesses | 2 unique pages
+[CACHE] 619.lbm_s-4268B.champsimtrace.xz: 8,453 accesses | 1 unique pages
+[CACHE] 620.omnetpp_s-141B.champsimtrace.xz: 200,000 accesses | 2 unique pages
+[CACHE] 620.omnetpp_s-874B.champsimtrace.xz: 200,000 accesses | 2 unique pages
+[CACHE] 621.wrf_s-575B.champsimtrace.xz: 10,317 accesses | 1 unique pages
+[CACHE] 621.wrf_s-6673B.champsimtrace.xz: 1,324 accesses | 1 unique pages
+[CACHE] 621.wrf_s-8065B.champsimtrace.xz: 200,000 accesses | 1 unique pages
+[CACHE] 621.wrf_s-8100B.champsimtrace.xz: 862 accesses | 1 unique pages
+[CACHE] 623.xalancbmk_s-10B.champsimtrace.xz: 9,434 accesses | 1 unique pages
+[CACHE] 623.xalancbmk_s-165B.champsimtrace.xz: 173,541 accesses | 2 unique pages
+[CACHE] 623.xalancbmk_s-202B.champsimtrace.xz: 62,598 accesses | 1 unique pages
+[CACHE] 623.xalancbmk_s-325B.champsimtrace.xz: 6,061 accesses | 1 unique pages
+[CACHE] 623.xalancbmk_s-592B.champsimtrace.xz: 1,411 accesses | 2 unique pages
+[CACHE] 623.xalancbmk_s-700B.champsimtrace.xz: 27,460 accesses | 1 unique pages
+[CACHE] 625.x264_s-12B.champsimtrace.xz: 131,716 accesses | 1 unique pages
+[CACHE] 625.x264_s-18B.champsimtrace.xz: 16,675 accesses | 1 unique pages
+[CACHE] 625.x264_s-20B.champsimtrace.xz: 1,761 accesses | 1 unique pages
+[CACHE] 625.x264_s-33B.champsimtrace.xz: 6,470 accesses | 1 unique pages
+[CACHE] 625.x264_s-39B.champsimtrace.xz: 1,453 accesses | 1 unique pages
+[CACHE] 627.cam4_s-490B.champsimtrace.xz: 200,000 accesses | 2 unique pages
+[CACHE] 627.cam4_s-573B.champsimtrace.xz: 410 accesses | 1 unique pages
+[CACHE] 628.pop2_s-17B.champsimtrace.xz: 70,764 accesses | 2 unique pages
+[CACHE] 631.deepsjeng_s-928B.champsimtrace.xz: 622 accesses | 1 unique pages
+[CACHE] 638.imagick_s-10316B.champsimtrace.xz: 15 accesses | 1 unique pages
+[NEW] 603.bwaves_s-3699B.champsimtrace.xz: 0 accesses — skipped
+[CACHE] 603.bwaves_s-5359B.champsimtrace.xz: 41 accesses | 1 unique pages
+[CACHE] 603.bwaves_s-891B.champsimtrace.xz: 72,850 accesses | 2 unique pages
+[CACHE] 605.mcf_s-1152B.champsimtrace.xz: 6,759 accesses | 1 unique pages
+[CACHE] 605.mcf_s-1536B.champsimtrace.xz: 15,221 accesses | 2 unique pages
+[CACHE] 605.mcf_s-1554B.champsimtrace.xz: 405 accesses | 1 unique pages
+[CACHE] 605.mcf_s-1644B.champsimtrace.xz: 9,249 accesses | 1 unique pages
+[CACHE] 605.mcf_s-472B.champsimtrace.xz: 3,513 accesses | 1 unique pages
+[CACHE] 605.mcf_s-484B.champsimtrace.xz: 5,946 accesses | 1 unique pages
+[CACHE] 605.mcf_s-665B.champsimtrace.xz: 17,684 accesses | 2 unique pages
+[CACHE] 605.mcf_s-782B.champsimtrace.xz: 8,766 accesses | 1 unique pages
+[CACHE] 605.mcf_s-994B.champsimtrace.xz: 182,314 accesses | 2 unique pages
+[CACHE] 607.cactuBSSN_s-2421B.champsimtrace.xz: 90,617 accesses | 2 unique pages
+[CACHE] 607.cactuBSSN_s-3477B.champsimtrace.xz: 10,717 accesses | 1 unique pages
+[CACHE] 607.cactuBSSN_s-4004B.champsimtrace.xz: 6,739 accesses | 2 unique pages
+[CACHE] 607.cactuBSSN_s-4248B.champsimtrace.xz: 352 accesses | 1 unique pages
+[CACHE] 619.lbm_s-2676B.champsimtrace.xz: 34,373 accesses | 2 unique pages
+[CACHE] 619.lbm_s-2677B.champsimtrace.xz: 8,652 accesses | 1 unique pages
+[CACHE] 619.lbm_s-3766B.champsimtrace.xz: 35,350 accesses | 2 unique pages
+[CACHE] 619.lbm_s-4268B.champsimtrace.xz: 8,453 accesses | 1 unique pages
+[CACHE] 620.omnetpp_s-141B.champsimtrace.xz: 200,000 accesses | 2 unique pages
+[CACHE] 620.omnetpp_s-874B.champsimtrace.xz: 200,000 accesses | 2 unique pages
+[CACHE] 621.wrf_s-575B.champsimtrace.xz: 10,317 accesses | 1 unique pages
+[CACHE] 621.wrf_s-6673B.champsimtrace.xz: 1,324 accesses | 1 unique pages
+[CACHE] 621.wrf_s-8065B.champsimtrace.xz: 200,000 accesses | 1 unique pages
+[CACHE] 621.wrf_s-8100B.champsimtrace.xz: 862 accesses | 1 unique pages
+[CACHE] 623.xalancbmk_s-10B.champsimtrace.xz: 9,434 accesses | 1 unique pages
+[CACHE] 623.xalancbmk_s-165B.champsimtrace.xz: 173,541 accesses | 2 unique pages
+[CACHE] 623.xalancbmk_s-202B.champsimtrace.xz: 62,598 accesses | 1 unique pages
+[CACHE] 623.xalancbmk_s-325B.champsimtrace.xz: 6,061 accesses | 1 unique pages
+[CACHE] 623.xalancbmk_s-592B.champsimtrace.xz: 1,411 accesses | 2 unique pages
+[CACHE] 623.xalancbmk_s-700B.champsimtrace.xz: 27,460 accesses | 1 unique pages
+[CACHE] 625.x264_s-12B.champsimtrace.xz: 131,716 accesses | 1 unique pages
+[CACHE] 625.x264_s-18B.champsimtrace.xz: 16,675 accesses | 1 unique pages
+[CACHE] 625.x264_s-20B.champsimtrace.xz: 1,761 accesses | 1 unique pages
+[CACHE] 625.x264_s-33B.champsimtrace.xz: 6,470 accesses | 1 unique pages
+[CACHE] 625.x264_s-39B.champsimtrace.xz: 1,453 accesses | 1 unique pages
+[CACHE] 627.cam4_s-490B.champsimtrace.xz: 200,000 accesses | 2 unique pages
+[CACHE] 627.cam4_s-573B.champsimtrace.xz: 410 accesses | 1 unique pages
+[CACHE] 628.pop2_s-17B.champsimtrace.xz: 70,764 accesses | 2 unique pages
+[CACHE] 631.deepsjeng_s-928B.champsimtrace.xz: 622 accesses | 1 unique pages
+[CACHE] 638.imagick_s-10316B.champsimtrace.xz: 15 accesses | 1 unique pages
+[rank0] Traces ready (1,945,854 accesses). Initialising DDP ...
+NCCL version 2.21.5+cuda11.0
+====================================================================
+   MambaEdge — DGX Multi-GPU Training  (3 GPU(s))
+====================================================================
+   Epochs        : 150
+   Batch/GPU     : 512  →  Effective: 1536
+   LR            : 0.001  (warmup 10 ep + cosine)
+   Stride        : 2
+   Label smooth  : page=0.1, offset=0.05
+   Early stop    : patience=20
+   Accesses      : 1,945,854  |  Unique pages: 2/512
+====================================================================
+Dataset sizes — Train: 778,326  Val: 194,553  Test: 194,554
+   Model params  : 170,548  (0.7 MB)
+   No checkpoint found — training from scratch.
+
+  Ep  TrainLoss   ValLoss  ValPageAcc  ValAddrAcc  Degree  State        LR   Time
+────────────────────────────────────────────────────────────────────────────────
+
+  [IPEX] ⬇  THROTTLE HIGH→MED degree 8→4x acc=0.0%
+
+  [IPEX] ⬇  THROTTLE MED→LOW degree 4→2x acc=0.0%
+   1     5.9052     5.8857        0.00%        0.00%       2x    LOW   1.00e-04   85.8s
+  [CKPT] ★ New best saved → ./checkpoints/mambaedge_best.pth
+  [CKPT] Epoch 1 checkpoint → ./checkpoints/mambaedge_epoch0001.pth
+
+  [IPEX] ⬆  RECOVER  LOW→MED degree 2→4x acc=100.0%
+
+  [IPEX] ⬆  RECOVER  MED→HIGH degree 4→8x acc=100.0%
+   2     1.8072     0.8271       99.89%       97.87%       8x   HIGH   2.00e-04   68.3s
+  [CKPT] ★ New best saved → ./checkpoints/mambaedge_best.pth
+  [CKPT] Epoch 2 checkpoint → ./checkpoints/mambaedge_epoch0002.pth
+   3     0.8755     0.8118       99.89%       98.20%       8x   HIGH   3.00e-04   74.6s
+  [CKPT] ★ New best saved → ./checkpoints/mambaedge_best.pth
+  [CKPT] Epoch 3 checkpoint → ./checkpoints/mambaedge_epoch0003.pth
+   4     0.8548     0.8074       99.89%       98.59%       8x   HIGH   4.00e-04   63.8s
+  [CKPT] ★ New best saved → ./checkpoints/mambaedge_best.pth
+  [CKPT] Epoch 4 checkpoint → ./checkpoints/mambaedge_epoch0004.pth
+   5     0.8431     0.8050       99.89%       98.57%       8x   HIGH   5.00e-04   61.6s
+  [CKPT] ★ New best saved → ./checkpoints/mambaedge_best.pth
+  [CKPT] Epoch 5 checkpoint → ./checkpoints/mambaedge_epoch0005.pth
+   6     0.8322     0.8036       99.89%       98.58%       8x   HIGH   6.00e-04   77.9s
+  [CKPT] ★ New best saved → ./checkpoints/mambaedge_best.pth
+  [CKPT] Epoch 6 checkpoint → ./checkpoints/mambaedge_epoch0006.pth
+   7     0.8238     0.8030       99.89%       98.59%       8x   HIGH   7.00e-04   78.0s
+  [CKPT] ★ New best saved → ./checkpoints/mambaedge_best.pth
+  [CKPT] Epoch 7 checkpoint → ./checkpoints/mambaedge_epoch0007.pth
+   8     0.8160     0.8029       99.89%       98.52%       8x   HIGH   8.00e-04   76.3s
+  [CKPT] ★ New best saved → ./checkpoints/mambaedge_best.pth
+  [CKPT] Epoch 8 checkpoint → ./checkpoints/mambaedge_epoch0008.pth
+   9     0.8110     0.8020       99.88%       98.58%       8x   HIGH   9.00e-04   62.5s
+  [CKPT] ★ New best saved → ./checkpoints/mambaedge_best.pth
+  [CKPT] Epoch 9 checkpoint → ./checkpoints/mambaedge_epoch0009.pth
+  10     0.8080     0.8021       99.88%       98.60%       8x   HIGH   1.00e-03   72.5s
+  [CKPT] Epoch 10 checkpoint → ./checkpoints/mambaedge_epoch0010.pth
+  11     0.8069     0.8019       99.89%       98.55%       8x   HIGH   1.00e-03   72.8s
+  [CKPT] ★ New best saved → ./checkpoints/mambaedge_best.pth
+  [CKPT] Epoch 11 checkpoint → ./checkpoints/mambaedge_epoch0011.pth
+  12     0.8055     0.8021       99.89%       98.59%       8x   HIGH   9.99e-04   61.8s
+  [CKPT] Epoch 12 checkpoint → ./checkpoints/mambaedge_epoch0012.pth
+  13     0.8049     0.8018       99.88%       98.58%       8x   HIGH   9.99e-04   61.4s
+  [CKPT] ★ New best saved → ./checkpoints/mambaedge_best.pth
+  [CKPT] Epoch 13 checkpoint → ./checkpoints/mambaedge_epoch0013.pth
+  14     0.8034     0.8026       99.89%       98.57%       8x   HIGH   9.98e-04   61.6s
+  [CKPT] Epoch 14 checkpoint → ./checkpoints/mambaedge_epoch0014.pth
+  15     0.8030     0.8019       99.89%       98.58%       8x   HIGH   9.97e-04   69.8s
+  [CKPT] Epoch 15 checkpoint → ./checkpoints/mambaedge_epoch0015.pth
+  16     0.8021     0.8017       99.89%       98.51%       8x   HIGH   9.95e-04   65.1s
+  [CKPT] ★ New best saved → ./checkpoints/mambaedge_best.pth
+  [CKPT] Epoch 16 checkpoint → ./checkpoints/mambaedge_epoch0016.pth
+  17     0.8016     0.8022       99.89%       98.57%       8x   HIGH   9.94e-04   62.3s
+  [CKPT] Epoch 17 checkpoint → ./checkpoints/mambaedge_epoch0017.pth
+  18     0.8010     0.8022       99.89%       98.57%       8x   HIGH   9.92e-04   62.3s
+  [CKPT] Epoch 18 checkpoint → ./checkpoints/mambaedge_epoch0018.pth
+  19     0.8004     0.8019       99.89%       98.58%       8x   HIGH   9.90e-04   65.1s
+  [CKPT] Epoch 19 checkpoint → ./checkpoints/mambaedge_epoch0019.pth
+  20     0.8005     0.8020       99.89%       98.50%       8x   HIGH   9.87e-04   63.0s
+  [CKPT] Epoch 20 checkpoint → ./checkpoints/mambaedge_epoch0020.pth
+  21     0.7998     0.8018       99.89%       98.57%       8x   HIGH   9.85e-04   62.3s
+  [CKPT] Epoch 21 checkpoint → ./checkpoints/mambaedge_epoch0021.pth
+  22     0.7994     0.8017       99.89%       98.58%       8x   HIGH   9.82e-04   61.9s
+  [CKPT] ★ New best saved → ./checkpoints/mambaedge_best.pth
+  [CKPT] Epoch 22 checkpoint → ./checkpoints/mambaedge_epoch0022.pth
+  23     0.7988     0.8014       99.89%       98.59%       8x   HIGH   9.79e-04   62.1s
+  [CKPT] ★ New best saved → ./checkpoints/mambaedge_best.pth
+  [CKPT] Epoch 23 checkpoint → ./checkpoints/mambaedge_epoch0023.pth
+  24     0.7991     0.8017       99.88%       98.60%       8x   HIGH   9.76e-04   72.4s
+  [CKPT] Epoch 24 checkpoint → ./checkpoints/mambaedge_epoch0024.pth
+  25     0.7988     0.8023       99.89%       98.51%       8x   HIGH   9.72e-04   61.2s
+  [CKPT] Epoch 25 checkpoint → ./checkpoints/mambaedge_epoch0025.pth
+  26     0.7993     0.8015       99.89%       98.57%       8x   HIGH   9.68e-04   61.5s
+  [CKPT] Epoch 26 checkpoint → ./checkpoints/mambaedge_epoch0026.pth
+  27     0.7982     0.8020       99.89%       98.46%       8x   HIGH   9.64e-04   61.7s
+  [CKPT] Epoch 27 checkpoint → ./checkpoints/mambaedge_epoch0027.pth
+  28     0.7983     0.8018       99.89%       98.60%       8x   HIGH   9.60e-04   62.1s
+  [CKPT] Epoch 28 checkpoint → ./checkpoints/mambaedge_epoch0028.pth
+  29     0.7985     0.8031       99.80%       98.45%       8x   HIGH   9.55e-04   61.5s
+  [CKPT] Epoch 29 checkpoint → ./checkpoints/mambaedge_epoch0029.pth
+  30     0.7982     0.8012       99.89%       98.58%       8x   HIGH   9.51e-04   62.4s
+  [CKPT] ★ New best saved → ./checkpoints/mambaedge_best.pth
+  [CKPT] Epoch 30 checkpoint → ./checkpoints/mambaedge_epoch0030.pth
+  31     0.7983     0.8015       99.89%       98.63%       8x   HIGH   9.46e-04   61.6s
+  [CKPT] Epoch 31 checkpoint → ./checkpoints/mambaedge_epoch0031.pth
+  32     0.7987     0.8015       99.88%       98.56%       8x   HIGH   9.40e-04   63.0s
+  [CKPT] Epoch 32 checkpoint → ./checkpoints/mambaedge_epoch0032.pth
+  33     0.7981     0.8023       99.88%       98.57%       8x   HIGH   9.35e-04   62.0s
+  [CKPT] Epoch 33 checkpoint → ./checkpoints/mambaedge_epoch0033.pth
+  34     0.7982     0.8022       99.89%       98.56%       8x   HIGH   9.29e-04   62.6s
+  [CKPT] Epoch 34 checkpoint → ./checkpoints/mambaedge_epoch0034.pth
+  35     0.7979     0.8021       99.88%       98.52%       8x   HIGH   9.23e-04   63.4s
+  [CKPT] Epoch 35 checkpoint → ./checkpoints/mambaedge_epoch0035.pth
+  36     0.7978     0.8024       99.86%       98.47%       8x   HIGH   9.17e-04   62.3s
+  [CKPT] Epoch 36 checkpoint → ./checkpoints/mambaedge_epoch0036.pth
+  37     0.7984     0.8017       99.89%       98.58%       8x   HIGH   9.11e-04   64.0s
+  [CKPT] Epoch 37 checkpoint → ./checkpoints/mambaedge_epoch0037.pth
+  38     0.7978     0.8015       99.89%       98.53%       8x   HIGH   9.05e-04   62.3s
+  [CKPT] Epoch 38 checkpoint → ./checkpoints/mambaedge_epoch0038.pth
+  39     0.7974     0.8017       99.89%       98.58%       8x   HIGH   8.98e-04   62.2s
+  [CKPT] Epoch 39 checkpoint → ./checkpoints/mambaedge_epoch0039.pth
+  40     0.7978     0.8016       99.89%       98.59%       8x   HIGH   8.91e-04   62.2s
+  [CKPT] Epoch 40 checkpoint → ./checkpoints/mambaedge_epoch0040.pth
+  41     0.7973     0.8017       99.89%       98.51%       8x   HIGH   8.84e-04   62.6s
+  [CKPT] Epoch 41 checkpoint → ./checkpoints/mambaedge_epoch0041.pth
+  42     0.7981     0.8017       99.89%       98.57%       8x   HIGH   8.77e-04   62.3s
+  [CKPT] Epoch 42 checkpoint → ./checkpoints/mambaedge_epoch0042.pth
+  43     0.7979     0.8016       99.88%       98.57%       8x   HIGH   8.69e-04   62.6s
+  [CKPT] Epoch 43 checkpoint → ./checkpoints/mambaedge_epoch0043.pth
+  44     0.7984     0.8017       99.89%       98.58%       8x   HIGH   8.62e-04   62.3s
+  [CKPT] Epoch 44 checkpoint → ./checkpoints/mambaedge_epoch0044.pth
+  45     0.7974     0.8012       99.89%       98.60%       8x   HIGH   8.54e-04   61.9s
+  [CKPT] ★ New best saved → ./checkpoints/mambaedge_best.pth
+  [CKPT] Epoch 45 checkpoint → ./checkpoints/mambaedge_epoch0045.pth
+  46     0.7975     0.8024       99.89%       98.55%       8x   HIGH   8.46e-04   62.1s
+  [CKPT] Epoch 46 checkpoint → ./checkpoints/mambaedge_epoch0046.pth
+  47     0.7982     0.8018       99.89%       98.55%       8x   HIGH   8.37e-04   62.1s
+  [CKPT] Epoch 47 checkpoint → ./checkpoints/mambaedge_epoch0047.pth
+  48     0.7982     0.8015       99.87%       98.50%       8x   HIGH   8.29e-04   62.1s
+  [CKPT] Epoch 48 checkpoint → ./checkpoints/mambaedge_epoch0048.pth
+  49     0.7976     0.8018       99.89%       98.51%       8x   HIGH   8.21e-04   61.6s
+  [CKPT] Epoch 49 checkpoint → ./checkpoints/mambaedge_epoch0049.pth
+  50     0.7977     0.8018       99.89%       98.57%       8x   HIGH   8.12e-04   62.6s
+  [CKPT] Epoch 50 checkpoint → ./checkpoints/mambaedge_epoch0050.pth
+  51     0.7980     0.8016       99.89%       98.50%       8x   HIGH   8.03e-04   62.5s
+  [CKPT] Epoch 51 checkpoint → ./checkpoints/mambaedge_epoch0051.pth
+  52     0.7976     0.8017       99.89%       98.53%       8x   HIGH   7.94e-04   63.1s
+  [CKPT] Epoch 52 checkpoint → ./checkpoints/mambaedge_epoch0052.pth
+  53     0.7976     0.8018       99.89%       98.54%       8x   HIGH   7.85e-04   65.2s
+  [CKPT] Epoch 53 checkpoint → ./checkpoints/mambaedge_epoch0053.pth
+  54     0.7976     0.8015       99.89%       98.54%       8x   HIGH   7.76e-04   64.4s
+  [CKPT] Epoch 54 checkpoint → ./checkpoints/mambaedge_epoch0054.pth
+  55     0.7973     0.8018       99.89%       98.58%       8x   HIGH   7.66e-04   64.1s
+  [CKPT] Epoch 55 checkpoint → ./checkpoints/mambaedge_epoch0055.pth
+  56     0.7975     0.8018       99.89%       98.58%       8x   HIGH   7.57e-04   65.9s
+  [CKPT] Epoch 56 checkpoint → ./checkpoints/mambaedge_epoch0056.pth
+  57     0.7974     0.8020       99.88%       98.54%       8x   HIGH   7.47e-04   64.5s
+  [CKPT] Epoch 57 checkpoint → ./checkpoints/mambaedge_epoch0057.pth
+  58     0.7975     0.8020       99.89%       98.56%       8x   HIGH   7.37e-04   66.2s
+  [CKPT] Epoch 58 checkpoint → ./checkpoints/mambaedge_epoch0058.pth
+  59     0.7975     0.8015       99.89%       98.60%       8x   HIGH   7.27e-04   65.2s
+  [CKPT] Epoch 59 checkpoint → ./checkpoints/mambaedge_epoch0059.pth
+  60     0.7977     0.8019       99.89%       98.54%       8x   HIGH   7.17e-04   65.6s
+  [CKPT] Epoch 60 checkpoint → ./checkpoints/mambaedge_epoch0060.pth
+  61     0.7975     0.8014       99.88%       98.60%       8x   HIGH   7.07e-04   62.5s
+  [CKPT] Epoch 61 checkpoint → ./checkpoints/mambaedge_epoch0061.pth
+  62     0.7975     0.8018       99.88%       98.57%       8x   HIGH   6.97e-04   62.2s
+  [CKPT] Epoch 62 checkpoint → ./checkpoints/mambaedge_epoch0062.pth
+  63     0.7975     0.8017       99.89%       98.56%       8x   HIGH   6.86e-04   62.3s
+  [CKPT] Epoch 63 checkpoint → ./checkpoints/mambaedge_epoch0063.pth
+  64     0.7972     0.8020       99.89%       98.54%       8x   HIGH   6.76e-04   61.7s
+  [CKPT] Epoch 64 checkpoint → ./checkpoints/mambaedge_epoch0064.pth
+  65     0.7975     0.8016       99.89%       98.54%       8x   HIGH   6.65e-04   62.4s
+  [CKPT] Epoch 65 checkpoint → ./checkpoints/mambaedge_epoch0065.pth
+
+  [EARLY STOP] No improvement for 20 epochs — stopping.
+
+────────────────────────────────────────────────────────────────────────────────
+Training complete!
+
+====================================================
+  IPEX Throttle Summary
+====================================================
+  Current state    : HIGH
+  Prefetch degree  : 8x
+  Rolling accuracy : 95.3%
+  Total batches    : 8255
+  Throttle events  :
+    batch 3 : THROTTLE HIGH→MED degree 8→4x acc=0.0%
+    batch 6 : THROTTLE MED→LOW degree 4→2x acc=0.0%
+    batch 139 : RECOVER  LOW→MED degree 2→4x acc=100.0%
+    batch 144 : RECOVER  MED→HIGH degree 4→8x acc=100.0%
+====================================================
+  [EXPORT] TorchScript model -> ./checkpoints/mambaedge_final_jit.pt
+  [LOG] History → ./checkpoints/training_history.json
+
+Running final test evaluation ...
+=======================================================
+   MambaEdge — Final Test Results (best model)
+=======================================================
+  Page  accuracy   (exact) :  99.81%
+  Page  coverage   (top-3) : 100.00%
+  Offset accuracy  (exact) :  97.51%
+  ─────────────────────────────────────
+  Address accuracy         :  97.51%
+  (page<<12 | offset<<6 — both must match)
+=======================================================
+
+Checkpoint files saved in: /home/cs25m115/mamba/checkpoints/
+  mambaedge_best.pth   ← best checkpoint (resume + weights)
+  mambaedge_latest.pth ← symlink to last epoch (for resuming)
+  mambaedge_final.pt   ← final weights only (inference)
+  training_history.json
+
+============================================================
+  Finished : Thu Apr 30 01:37:25 IST 2026
+  Exit code: 0
+============================================================
+
+Checkpoint files:
+total 8.9M
+drwxr-xr-x. 2 cs25m115 cs25m115  175 Apr 29 23:35 check
+-rw-r--r--. 1 cs25m115 cs25m115 2.1M Apr 30 01:16 mambaedge_best.pth
+-rw-r--r--. 1 cs25m115 cs25m115 2.1M Apr 30 01:35 mambaedge_epoch0063.pth
+-rw-r--r--. 1 cs25m115 cs25m115 2.1M Apr 30 01:36 mambaedge_epoch0064.pth
+-rw-r--r--. 1 cs25m115 cs25m115 2.1M Apr 30 01:37 mambaedge_epoch0065.pth
+-rw-r--r--. 1 cs25m115 cs25m115 737K Apr 30 01:37 mambaedge_final_jit.pt
+lrwxrwxrwx. 1 cs25m115 cs25m115   56 Apr 30 01:37 mambaedge_latest.pth -> /home/cs25m115/mamba/checkpoints/mambaedge_epoch0065.pth
+-rw-r--r--. 1 cs25m115 cs25m115  11K Apr 28 01:08 mambaedge_sim_results.json
+-rw-r--r--. 1 cs25m115 cs25m115 8.6K Apr 30 01:37 training_history.json

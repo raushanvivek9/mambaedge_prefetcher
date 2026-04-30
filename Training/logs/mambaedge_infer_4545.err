@@ -1,0 +1,41 @@
+/home/cs25m115/mamba/mambaedge_inference.py:456: RuntimeWarning: Mean of empty slice.
+  page_acc = page_correct.mean() * 100
+/home/cs25m115/miniconda3/envs/mamba_env/lib/python3.10/site-packages/numpy/_core/_methods.py:145: RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)
+/home/cs25m115/mamba/mambaedge_inference.py:457: RuntimeWarning: Mean of empty slice.
+  off_acc  = off_correct.mean()  * 100
+/home/cs25m115/mamba/mambaedge_inference.py:458: RuntimeWarning: Mean of empty slice.
+  addr_acc = addr_correct.mean() * 100
+/home/cs25m115/mamba/mambaedge_inference.py:456: RuntimeWarning: Mean of empty slice.
+  page_acc = page_correct.mean() * 100
+/home/cs25m115/miniconda3/envs/mamba_env/lib/python3.10/site-packages/numpy/_core/_methods.py:145: RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)
+/home/cs25m115/mamba/mambaedge_inference.py:457: RuntimeWarning: Mean of empty slice.
+  off_acc  = off_correct.mean()  * 100
+/home/cs25m115/mamba/mambaedge_inference.py:458: RuntimeWarning: Mean of empty slice.
+  addr_acc = addr_correct.mean() * 100
+/home/cs25m115/mamba/mambaedge_inference.py:456: RuntimeWarning: Mean of empty slice.
+  page_acc = page_correct.mean() * 100
+/home/cs25m115/miniconda3/envs/mamba_env/lib/python3.10/site-packages/numpy/_core/_methods.py:145: RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)
+/home/cs25m115/mamba/mambaedge_inference.py:457: RuntimeWarning: Mean of empty slice.
+  off_acc  = off_correct.mean()  * 100
+/home/cs25m115/mamba/mambaedge_inference.py:458: RuntimeWarning: Mean of empty slice.
+  addr_acc = addr_correct.mean() * 100
+/home/cs25m115/mamba/mambaedge_inference.py:456: RuntimeWarning: Mean of empty slice.
+  page_acc = page_correct.mean() * 100
+/home/cs25m115/miniconda3/envs/mamba_env/lib/python3.10/site-packages/numpy/_core/_methods.py:145: RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)
+/home/cs25m115/mamba/mambaedge_inference.py:457: RuntimeWarning: Mean of empty slice.
+  off_acc  = off_correct.mean()  * 100
+/home/cs25m115/mamba/mambaedge_inference.py:458: RuntimeWarning: Mean of empty slice.
+  addr_acc = addr_correct.mean() * 100
+/home/cs25m115/mamba/mambaedge_inference.py:456: RuntimeWarning: Mean of empty slice.
+  page_acc = page_correct.mean() * 100
+/home/cs25m115/miniconda3/envs/mamba_env/lib/python3.10/site-packages/numpy/_core/_methods.py:145: RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)
+/home/cs25m115/mamba/mambaedge_inference.py:457: RuntimeWarning: Mean of empty slice.
+  off_acc  = off_correct.mean()  * 100
+/home/cs25m115/mamba/mambaedge_inference.py:458: RuntimeWarning: Mean of empty slice.
+  addr_acc = addr_correct.mean() * 100
+python: can't open file '/home/cs25m115/mamba/champsim_simulate.py': [Errno 2] No such file or directory
