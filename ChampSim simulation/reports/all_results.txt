@@ -1,0 +1,12 @@
+ChampSim Proxy Evaluation Results
+Generated: Wed Apr 29 21:30:41 UTC 2026
+==================================================
+bwaves_1609B | IPC=0.7027 | Acc=95.46% | Power=2.492 | Energy=354.609 | Eff=0.282
+gcc_13B | IPC=0.1779 | Acc=57.81% | Power=3.827 | Energy=2150.874 | Eff=0.046
+mcf_158B | IPC=0.08098 | Acc=36.00% | Power=15.452 | Energy=19080.840 | Eff=0.005
+omnetpp_340B | IPC=0.252 | Acc=24.91% | Power=3.304 | Energy=1310.970 | Eff=0.076
+xalancbmk_748B | IPC=0.8125 | Acc=16.10% | Power=1.648 | Energy=202.839 | Eff=0.493
+cactusADM_1039B | IPC=0.8487 | Acc=86.63% | Power=1.585 | Energy=186.749 | Eff=0.535
+lbm_1004B | IPC=0.5869 | Acc=39.76% | Power=1.962 | Energy=334.318 | Eff=0.299
+mcf_46B | IPC=0.1164 | Acc=22.27% | Power=10.979 | Energy=9430.051 | Eff=0.011
+wrf_1650B | IPC=1.168 | Acc=99.42% | Power=1.111 | Energy=95.098 | Eff=1.051

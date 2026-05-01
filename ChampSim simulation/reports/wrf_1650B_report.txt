@@ -1,0 +1,42 @@
+==================================================
+Trace File              : wrf_1650B
+Warmup Instructions     : 2000000
+Simulation Instructions : 10000000
+==================================================
+
+SYSTEM PERFORMANCE
+IPC                     : 1.168
+CPI                     : 0.856
+Instructions            : 10000000
+Cycles                  : 8559688
+
+PREFETCH PERFORMANCE
+Prefetch Requested      : 867
+Prefetch Issued         : 867
+Useful Prefetches       : 862
+Useless Prefetches      : 4
+Accuracy (%)            : 99.42
+Pollution (%)           : 0.46
+Coverage (%)            : 5.70
+
+CACHE BEHAVIOR
+L2 Misses               : 15118
+LLC Misses              : 15113
+L2 Miss Latency         : 178
+LLC Miss Latency        : 165.1
+
+MEMORY SYSTEM
+Row Buffer Hit Rate (%) : 0.00
+Bus Congestion          : 2.26
+Memory Pressure Score   : 15.339
+
+POWER / ENERGY (Proxy)
+Power Score             : 1.111
+Energy Score            : 95.098
+Perf/Watt Score         : 1.051
+
+NOTES
+- Miss reduction requires baseline comparison
+- Latency unaffected requires baseline comparison
+- Power/Energy are architecture-level proxies
+==================================================
